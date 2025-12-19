@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Click & Order — Modern Retail</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Site wrapper for theme toggling -->
+  <div class="site" id="site">
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__content">
+        <h1 class="site-title">Click & Order</h1>
+
+        <!-- Navigation -->
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active" data-nav="home">Home</a></li>
+            <li><a href="#about" class="nav__link" data-nav="about">About</a></li>
+            <li><a href="#services" class="nav__link" data-nav="services">Services</a></li>
+            <li><a href="#contact" class="nav__link" data-nav="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Dark mode toggle -->
+        <button id="themeToggle" class="btn btn--toggle" aria-pressed="false" aria-label="Toggle dark mode">
+          🌙 Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Welcome / Home section -->
+      <section id="home" class="section hero">
+        <div class="container">
+          <h2>Welcome to Click & Order</h2>
+          <p>
+            Experience modern retail—fast, flexible, and designed around you. Shop services, connect with our team,
+            and explore digital-first solutions built for today’s customers.
+          </p>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            We help businesses transform from brick-and-mortar to click-and-order with seamless experiences across
+            web, mobile, and in-store channels.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services section -->
+      <section id="services" class="section services">
+        <div class="container">
+          <h2>Our Services</h2>
+
+          <!-- Card grid -->
+          <div class="card-grid">
+            <!-- Card 1 -->
+            <article class="card">
+              <h3 class="card__title">E‑commerce Setup</h3>
+              <p class="card__text">
+                Launch a high-performance online store with secure payments, product management, and analytics.
+              </p>
+              <a href="#contact" class="btn btn--primary">Get Started</a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <h3 class="card__title">Omnichannel Integration</h3>
+              <p class="card__text">
+                Connect your physical and digital channels with inventory sync, click-and-collect, and loyalty programs.
+              </p>
+              <a href="#contact" class="btn btn--primary">Learn More</a>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <h3 class="card__title">Growth Marketing</h3>
+              <p class="card__text">
+                Drive conversions with SEO, email campaigns, and personalized recommendations powered by customer data.
+              </p>
+              <a href="#contact" class="btn btn--primary">Start a Campaign</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Send us a message and we’ll get back to you shortly.</p>
+
+          <!-- Success message (hidden by default) -->
+          <div id="formSuccess" class="alert alert--success" role="status" aria-live="polite" hidden>
+            Thank you! Your message has been sent.
+          </div>
+
+          <!-- Contact form -->
+          <form id="contactForm" novalidate>
+            <!-- Name field -->
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Angelica Ivanna Dy" required />
+              <small class="error" id="error-name" aria-live="polite"></small>
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="angel@example.com" required />
+              <small class="error" id="error-email" aria-live="polite"></small>
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+              <small class="error" id="error-message" aria-live="polite"></small>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <p>&copy; <span id="currentYear"></span> Click & Order. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css" />
+<script src="js/script.js"></script>
+
+
